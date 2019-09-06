@@ -1,0 +1,110 @@
+.header
+    background: url(../img/background.jpg) center no-repeat
+    background-size: cover
+    &-logobar
+        display: flex
+        justify-content: space-between
+        padding-top: 50px
+        padding-bottom: 70px
+        z-index: 10
+        &__logo
+            display: flex
+            align-items: center
+            img
+                margin-right: 30px
+                z-index: 10
+        &__text
+            color: #fff
+            padding: 15px 0px 15px 30px
+            border-left:  1px solid #ffffff
+            font-size: 16px
+        &-contact
+            display: flex
+            align-items: center
+            &__phone
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                color: #ffffff
+                margin-right: 25px
+            &__question
+                font-size: 14px
+            &__number
+                font-family: "Proxima Nova Bd"
+                font-size: 19px
+    
+    &-main
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-text
+            color: #ffffff
+            &__title
+                font-size: 48px
+                font-weight: bold
+                margin-bottom: 10px
+            &__subtitle
+                font-weight: 600
+                font-size: 24px
+                margin-bottom: 10px
+            p
+                font-size: 18px
+                margin-bottom: 30px
+        &-form
+            display: flex
+            flex-direction: column
+            width: 360px
+            height: 320px
+            border-top: 2px solid #C2B7EE
+            border-left: 2px solid #C2B7EE
+            border-right: 2px solid #C2B7EE
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+            background-size: 55px 2px, 55px 2px
+            background-repeat: no-repeat, no-repeat
+            background-position: left bottom, right bottom
+
+            &__text
+                color: #ffffff
+                text-align: center
+                margin-top: 30px
+                h3
+                    font-weight: bold
+                    font-size: 22px
+                span
+                    font-size: 16px
+            form    
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding-left: 30px
+                padding-right: 30px
+                padding-top: 30px
+                .form-name
+                    width: 100%
+                    background-image: url(../img/icons/user_icon.png)
+                    background-repeat: no-repeat
+                    background-position: 3% 50%
+                    padding-top: 15px
+                    padding-bottom: 15px
+                    padding-left: 40px
+                    border-radius: 50px
+                    margin-bottom: 15px
+                .form-phone
+                    width: 100%
+                    background-image: url(../img/icons/phone_icon.png)
+                    background-repeat: no-repeat
+                    background-position: 3% 50%
+                    padding-top: 15px
+                    padding-bottom: 15px
+                    padding-left: 40px
+                    border-radius: 50px
+                    margin-bottom: 25px
+
+
+    &-arrow
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 70px 0
