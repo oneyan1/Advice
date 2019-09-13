@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: "Proxima Nova lt";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 button {
@@ -684,4 +686,123 @@ input {
   padding-bottom: 15px;
   padding-left: 40px;
   border-radius: 50px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 80px;
+}
+
+.contacts-text {
+  padding-left: 50px;
+}
+
+.contacts .contact-text {
+  color: #202020;
+  font-family: "Proxima Nova Sb";
+  padding-bottom: 30px;
+}
+
+.contacts .contact-text__span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Proxima Nova Rg";
+}
+
+.contacts .contact-text__span::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50px;
+}
+
+.contacts .contact-text__adress::before {
+  background: url(../img/icons/map-marker.png) center no-repeat, linear-gradient(45deg, #3086d7 35%, #6f6ce4 65%);
+}
+
+.contacts .contact-text__phone::before {
+  background: url(../img/icons/phone-marker.png) center no-repeat, linear-gradient(45deg, #3086d7 35%, #6f6ce4 65%);
+}
+
+.contacts .contact-text__inv {
+  margin-bottom: 100px;
+}
+
+.footer {
+  background: url(../img/bg_footer.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.footer-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-down__text {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.popup {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #3086d7 35%, #6f6ce4 65%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.popup-form {
+  position: relative;
+}
+
+.popup-form__close {
+  position: absolute;
+  font-size: 45px;
+  top: 0;
+  right: 5%;
+  cursor: pointer;
+}
+
+.popup-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }

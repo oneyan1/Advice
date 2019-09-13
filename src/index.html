@@ -35,7 +35,7 @@
               +7 495 222 20 92
             </div>
           </div>
-          <button class="button">
+          <button class="button button-modal">
             Перезвоните мне!
           </button>
         </div>
@@ -53,12 +53,13 @@
             Мы бесплатно научим Вас как всего за 10 часов начать зарабатывать от 100 000 <br>
             рублей в месяц под строгим контролем профессионалов.
           </p>
-          <button class="button">
+          <button class="button button-modal">
             Начать зарабатывать!
           </button>
         </div>
         <div class="header-main-form">
           <div class="header-main-form__text">
+            
             <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
             <span>Чтобы получить бесплатный пакет <br>
               материалов о финансовом рынке</span>
@@ -177,7 +178,7 @@
         </div>
       </div>
       <div class="learning-button">
-        <button class="button">
+        <button class="button button-modal">
           Получить консультацию о курсе
         </button>
       </div>
@@ -236,7 +237,7 @@
               Успейте забронировать место в группе!
             </div>
         </div>
-        <button class="button">Забронировать место!</button>
+        <button class="button button-modal">Забронировать место!</button>
       </div>
     </div>
   </section>
@@ -355,7 +356,7 @@
             инвестированию
           </div>
           <div class="services-blcok__btn">
-              <button class="button">
+              <button class="button button-modal">
               Узнать
             </button>
             </div>
@@ -370,7 +371,7 @@
             финансами
           </div>
           <div class="services-blcok__btn">
-            <button class="button">
+            <button class="button button-modal">
             Узнать
           </button>
           </div>
@@ -387,7 +388,7 @@
             криптовалюты и ICO
           </div>
           <div class="services-blcok__btn">
-              <button class="button">
+              <button class="button button-modal">
               Узнать
             </button>
             </div>
@@ -423,28 +424,93 @@
     </div>
   </section>
 
-  <sectiom class="maps">
+  <sectiom class="contacts">
     <div class="container">
       <div class="section-title">
         <h2>ГДЕ ПРОХОДИТ ОБУЧЕНИЕ?</h2>
       </div>
 
-      <div class="maps-block">
-        <div class="maps-block__section">
-
-        </div>
-        <div class="maps-block__text">
-
+      <div class="contacts-block">
+            <div class="contacts-block__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2641734b650e3a7715b0cf904edc566e2c8a7b5ec009f7daece741966233343&amp;width=728&amp;height=406&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
+            <div class="contacts-text">
+              <div class="contact-text">
+                Адрес нашего тренинг центра
+                <span class="contact-text__span contact-text__adress">
+                  Москва, улица Победы, 1
+                </span>
+              </div>
+              <div class="contact-text">
+                Остались вопросы? Позвоните
+                <span class="contact-text__span contact-text__phone">+38 (097) 835-73-77</span>
+              </div>
+              <div class="contact-text"> 
+                <span class="contact-text__inv">Или оставьте заявку на звонок</span>
+                <button class="button button-modal">Заказать звонок</button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </sectiom>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+  <footer class="footer">
+    <div class="container">
+      <div class="header-logobar">
+        <div class="header-logobar__logo">
+          <img src="img/logo_image.png" alt="logo">
+          <div class="header-logobar__text">
+            Обучаем зарабатывать и инвестировать <br>
+            на финансовых рынках с минимумом риска
+          </div>
+        </div>
+        <div class="header-logobar-contact">
+          <div class="header-logobar-contact__phone">
+            <div class="header-logobar-contact__question">
+              Есть вопросы?
+            </div>
+            <div class="header-logobar-contact__number">
+              +7 495 222 20 92
+            </div>
+          </div>
+          <button class="button button-modal">
+            Перезвоните мне!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-down">
+      <div class="footer-down__text">
+        © www.advice.ru 2008-2017. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <section class="popup">
+    <div class="header-main-form popup-form">
+      <div class="header-main-form__text">
+        <div class="popup-form__close" id="close">&times;</div>
+        <h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+        <span>Чтобы получить бесплатный пакет <br>
+          материалов о финансовом рынке</span>
+      </div>
+      <form action="#" class="form">
+        <input type="text" placeholder="Ваше имя" class="form-name" required>
+        <input type="tel" placeholder="Ваш номер телефона" class="form-phone" required>
+        <button class="button button-modal">Получить материалы</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

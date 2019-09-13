@@ -1,0 +1,33 @@
+.contacts
+    &-block
+        display: flex
+        align-items: center
+        padding-bottom: 80px
+    &-text
+        padding-left: 50px
+
+    .contact
+        &-text
+            color: #202020
+            font-family: "Proxima Nova Sb"
+            padding-bottom: 30px
+            &__span
+                display: flex
+                align-items: center
+                font-family: "Proxima Nova Rg"
+                
+                &::before
+                    content: ""
+                    display: flex
+                    margin-right: 10px
+                    width: 29px
+                    height: 29px
+                    border-radius: 50px
+            &__adress
+                &::before
+                    background: url(../img/icons/map-marker.png) center no-repeat, linear-gradient(45deg, #3086d7 35%, #6f6ce4 65%)
+            &__phone
+                &::before
+                    background: url(../img/icons/phone-marker.png) center no-repeat, linear-gradient(45deg, #3086d7 35%, #6f6ce4 65%)
+            &__inv
+                margin-bottom: 100px
