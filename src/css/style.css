@@ -15,8 +15,6 @@ input {
 }
 
 .button {
-  min-width: 150px;
-  min-height: 45px;
   background-color: #FFDC38;
   padding: 15px 30px;
   border-radius: 50px;
@@ -101,8 +99,8 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   z-index: 10;
 }
 
@@ -476,10 +474,13 @@ input {
 
 .reason-certificate .certificate-img img {
   max-width: 90%;
+  cursor: pointer;
 }
 
 .reason-certificate .certificate-text {
   text-align: center;
+  color: #5b5b5b;
+  font-weight: 700;
 }
 
 .recruitment {
@@ -559,8 +560,9 @@ input {
   margin-bottom: 25px;
 }
 
-.reviews-slider__image a {
-  cursor: pointer;
+.reviews-slider__image button {
+  border: none;
+  background-color: #fff;
 }
 
 .reviews-slider__name {
@@ -604,6 +606,8 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -698,8 +702,9 @@ input {
   padding-bottom: 80px;
 }
 
-.contacts-text {
-  padding-left: 50px;
+.contacts-map {
+  width: 728px;
+  margin-right: 30px;
 }
 
 .contacts .contact-text {
@@ -805,4 +810,141 @@ input {
 .popup-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay img {
+  height: 90%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+@media (max-width: 1200px) {
+  .about-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-block-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about-block__text p {
+    text-align: center;
+  }
+  .about-block__video {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px;
+  }
+  .about-block__video iframe {
+    width: 720px;
+  }
+  .about-block__photo {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .reason-block {
+    width: 280px;
+  }
+  .services-block {
+    width: 320px;
+    margin: 7px;
+  }
+  .services-block img {
+    max-width: 280px;
+  }
+  .services-block__title {
+    font-size: 18px;
+  }
+  .services-block__subtitle {
+    font-size: 13px;
+  }
+  .contacts-map {
+    width: 580px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  input {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-logobar__text {
+    display: none;
+  }
+  .header-main-mediaform {
+    display: none;
+  }
+  .learning-skill__text {
+    font-size: 13px;
+  }
+  .reason-block {
+    width: 220px;
+    height: 150px;
+  }
+  .reason-block__circle {
+    height: 56px;
+    width: 56px;
+    font-size: 20px;
+  }
+  .reason-block__text {
+    font-size: 14px;
+  }
+  .reviews-slider__text {
+    font-size: 14px;
+  }
+  .services-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services-block {
+    width: 70%;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+  .services-block img {
+    width: 100%;
+  }
+  .question-form .second-form__name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .question-form .second-form__phone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

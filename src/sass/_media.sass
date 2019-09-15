@@ -1,0 +1,93 @@
+@media(max-width: 1200px)
+    .about
+        &-block
+            flex-direction: column
+            flex-wrap: wrap-reverse
+            align-items: center
+            &-info
+                order: 2
+            &__text
+                p
+                    text-align: center
+            &__video
+                order: 1
+                margin-bottom: 20px
+                iframe
+                    width: 720px
+            &__photo
+                justify-content: space-around
+    .reason
+        &-block
+            width: 280px
+    .services
+        &-block
+            width: 320px
+            margin: 7px
+            img
+                max-width: 280px
+            &__title
+                font-size: 18px
+            &__subtitle
+                font-size: 13px
+            
+    .contacts
+        &-map
+            width: 580px
+
+    .button
+        padding: 10px 20px
+        font-size: 14px
+
+    input
+        padding-top: 0px
+        padding-bottom: 10px
+        padding-left: 30px
+
+@media(max-width: 992px)
+    .header
+        &-logobar
+            &__text
+                display: none
+        &-main
+            &-mediaform
+                display: none
+
+    .learning
+        &-skill
+            &__text
+                font-size: 13px
+
+    .reason
+        &-block
+            width: 220px
+            height: 150px
+            &__circle
+                height: 56px
+                width: 56px
+                font-size: 20px
+            &__text
+                font-size: 14px
+
+    .reviews-slider
+        &__text
+            font-size: 14px
+
+    .services
+        &-blocks
+            flex-direction: column
+            align-items: center
+        &-block
+            width: 70%
+            border-radius: 10px
+            padding-top: 20px
+            img
+                width: 100%
+    .question
+        &-form
+            .second-form
+                &__name
+                    padding-top: 10px
+                    padding-bottom: 10px
+                &__phone
+                    padding-top: 10px
+                    padding-bottom: 10px
