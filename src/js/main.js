@@ -31,23 +31,22 @@ window.addEventListener("DOMContentLoaded", ()=>{
         } 
     });
 
-    let slider = document.querySelector(".reviews-slider");
-    let sliderNonActive = document.querySelectorAll(".reviews-slider-nonactive");
-    let prevBtn = slider.querySelector(".left-arrow");
-    let nextBtn = slider.querySelector(".right-arrow");
+    let slideNum = 0;
+    let slider = document.querySelectorAll(".reviews-slider");
+    let prevBtn = document.querySelector(".left-arrow");
+    let nextBtn = document.querySelector(".right-arrow");
+
+    console.log(slider);
+    function showSlide(slideNum){
+        slider.forEach((item)=>{item.style.display = "none"});
+        slider[slideNum].style.display = "flex";
+        
+    }
+
+    showSlide(slideNum);
 
     nextBtn.addEventListener("click", ()=>{
-        
-        sliderNonActive.forEach((item)=>{
-            slider.classList.remove("reviews-slider");
-            slider.classList.add("reviews-slider-nonactive");
-            item.classList.remove("reviews-slider-nonactive");
-            item.classList.add("reviews-slider");
-        })
-        // slider.classList.remove("reviews-slider");
-        // slider.classList.add("reviews-slider-nonactive");
-        // sliderNonActive[0].classList.remove("reviews-slider-nonactive");
-        // sliderNonActive[0].classList.add("reviews-slider");
+        showSlide(slideNum+1);
     });
 });
 
