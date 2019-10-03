@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
   <!-- <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css"> -->
 
@@ -220,7 +222,9 @@
       </div>
       <div class="reason-certificate">
         <div class="certificate-img">
-          <img id="certificate-small" src="img/certificate.JPG" alt="">
+          <a data-fancybox="gallery" href="img/certificate.JPG">
+            <img src="img/certificate.JPG" alt="">
+          </a>
         </div>
         <div class="certificate-text">
           Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ
@@ -505,11 +509,16 @@
       <img id="certificate-full" src="img/certificate.JPG" alt="">
     </div>
   </div>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-  <!-- <script src="slick/slick.min.js"></script> -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  
 </body>
 
 </html>

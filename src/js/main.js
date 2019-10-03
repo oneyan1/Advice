@@ -4,9 +4,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     let btn = document.querySelectorAll(".button-modal");
     let popup = document.querySelector(".popup");
     let modalClose = popup.querySelector("#close");
-    let certificateImgSmall = document.querySelector("#certificate-small");
-    let certificateImgFull = document.querySelector("#certificate-full");
-    let overlay = document.querySelector(".overlay");
+
 
     btn.forEach((item)=>{
         item.addEventListener("click", ()=>{
@@ -18,35 +16,46 @@ window.addEventListener("DOMContentLoaded", ()=>{
         popup.classList.remove("popup-active");
     });
 
-    certificateImgSmall.addEventListener("click", ()=>{
-        overlay.style.display = "flex";
-    });
 
-    overlay.addEventListener("click", (event)=>{
-        if(event.target === overlay.querySelector("img")){
-            overlay.querySelector("img").style.height = "100%";
-        }
-        else{
-            overlay.style.display = "none";
-        } 
-    });
-
-    let slideNum = 0;
+    let slideIndex = 0;
     let slider = document.querySelectorAll(".reviews-slider");
     let prevBtn = document.querySelector(".left-arrow");
     let nextBtn = document.querySelector(".right-arrow");
 
-    console.log(slider);
+    showSlide(slideIndex);
+    
     function showSlide(slideNum){
-        slider.forEach((item)=>{item.style.display = "none"});
-        slider[slideNum].style.display = "flex";
+        if(slideNum > slider.length-1){
+            slideIndex = 0;
+        }
+        if(slideNum < 0){
+            slideIndex = slider.length-1;
+        }
+
+        slider.forEach((item)=> item.style.display = "none");
+        slider[slideIndex].style.display = "flex";
         
     }
 
-    showSlide(slideNum);
+    function plusSlide(slideNum){
+        showSlide(slideIndex += slideNum);
+    }
 
     nextBtn.addEventListener("click", ()=>{
-        showSlide(slideNum+1);
+        slider.forEach((item)=>{
+            item.classList.remove("animate-slider-left");
+            item.classList.add("animate-slider-right");
+        });
+        plusSlide(1);
     });
+
+    prevBtn.addEventListener("click", ()=>{
+        slider.forEach((item)=>{
+            item.classList.remove("animate-slider-right");
+            item.classList.add("animate-slider-left");
+        });
+        plusSlide(-1);
+    });
+
 });
 
